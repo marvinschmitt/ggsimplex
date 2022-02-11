@@ -14,6 +14,7 @@ stat_simplex_density(
   inherit.aes = FALSE,
   fun = NULL,
   args = NULL,
+  col_scale = "linear",
   ...
 )
 }
@@ -35,6 +36,10 @@ stat_simplex_density(
 \item{fun}{}
 
 \item{args}{}
+
+\item{col_scale}{specify a color scale mapping. 
+Possible values include: "linear", "sqrt", "log", any numeric n for n'th root, 
+NULL (defaults to linear)}
 
 \item{...}{}
 }

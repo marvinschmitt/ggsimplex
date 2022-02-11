@@ -4,7 +4,12 @@
 \alias{construct_density_matrix}
 \title{Construct and evaluate a simplex density as a grid-based color map}
 \usage{
-construct_density_matrix(density_function, args)
+construct_density_matrix(
+  density_function,
+  args,
+  resolution = 101,
+  col_scale = "linear"
+)
 }
 \arguments{
 \item{density_function}{}
