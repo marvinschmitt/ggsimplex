@@ -16,7 +16,9 @@ Description: This package provides visualization utilities for simplex
     Model Probabilities.
     The package is currently under active development and highly experimental.
 Imports:
-    ggplot2
+    ggplot2,
+    viridis,
+    data.table
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

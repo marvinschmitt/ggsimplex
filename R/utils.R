@@ -11,3 +11,16 @@
 dot <- function(u, v){
   return(sum(u*v))
 }
+
+
+
+#' Helper function to bind columns into a single list column
+#'
+#' @param ... 
+#'
+#' @return
+#' @export
+make_list_column <- function(...){
+  return(mapply(list, ..., SIMPLIFY=FALSE))
+}
+  
