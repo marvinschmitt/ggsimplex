@@ -1,6 +1,6 @@
 Package: ggsimplex
 Type: Package
-Title: Simplex Extension for ggplot2
+Title: Simplex Extension for 'ggplot2'
 Version: 0.0.1
 Authors@R: 
     c(person("Marvin", "Schmitt", email = "mail.marvinschmitt@gmail.com",
@@ -8,8 +8,8 @@ Authors@R:
       person("Paul-Christian", "Bürkner", role = c("aut"))
       )
 Maintainer: Marvin Schmitt <mail.marvinschmitt@gmail.com>
-Description: This package provides visualization utilities for simplex 
-    representations. It is an extension to ggplot2.
+Description: This 'ggplot2' extension provides visualization utilities for simplex 
+    representations.
     The underlying barycentric coordinate representation 
     offers a canonical visualization technique for various quantities of
     interest. The main intended use case for this package are Posterior
@@ -24,5 +24,6 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
 Suggests: 
+    covr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
