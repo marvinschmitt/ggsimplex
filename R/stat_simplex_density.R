@@ -2,21 +2,16 @@
 
 #' Draw a simplex density heatmap from distributional parameters
 #'
-#' @param mapping 
-#' @param data 
-#' @param geom 
-#' @param position 
-#' @param na.rm 
-#' @param show.legend 
-#' @param inherit.aes 
-#' @param fun 
-#' @param args 
+#' @inheritParams ggplot2::stat_identity
+#' @param na.rm If `FALSE`, the default, missing values are removed with
+#'   a warning. If `TRUE`, missing values are silently removed.
+#' @param ... Other arguments passed on to [layer()]. These are
+#'   often aesthetics, used to set an aesthetic to a fixed value.
+#' @param fun density function to evaluate at each grid point
+#' @param args arguments to the function `fun`
 #' @param col_scale specify a color scale mapping. 
 #' Possible values include: "linear", "sqrt", "log", any numeric n for n'th root, 
 #' NULL (defaults to linear)
-#' @param ... 
-#'
-#' @return
 #' @export
 stat_simplex_density <- function(mapping = NULL, data = NULL, 
                                  geom = "simplex_heatmap",

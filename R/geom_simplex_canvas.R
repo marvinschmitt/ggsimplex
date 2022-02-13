@@ -2,16 +2,11 @@
 
 #' Draw Simplex Canvas
 #'
-#' @param mapping 
-#' @param data 
-#' @param stat 
-#' @param position 
-#' @param na.rm 
-#' @param show.legend 
-#' @param inherit.aes 
-#' @param ... 
-#'
-#' @return
+#' @inheritParams ggplot2::layer
+#' @param na.rm If `FALSE`, the default, missing values are removed with
+#'   a warning. If `TRUE`, missing values are silently removed.
+#' @param ... Other arguments passed on to [layer()]. These are
+#'   often aesthetics, used to set an aesthetic to a fixed value.
 #' @export
 geom_simplex_canvas <- function(
   mapping = NULL, data = data.frame(0), stat = "identity",

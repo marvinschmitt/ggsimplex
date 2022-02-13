@@ -12,9 +12,13 @@ construct_density_matrix(
 )
 }
 \arguments{
-\item{density_function}{}
+\item{density_function}{Density function that is evaluated at each grid point}
 
-\item{args}{}
+\item{args}{arguments to the density function}
+
+\item{resolution}{number of grid points along axes}
+
+\item{col_scale}{scale mapping, e.g. "linear" or "sqrt"}
 }
 \value{
 A matrix of color codes

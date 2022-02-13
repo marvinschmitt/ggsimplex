@@ -1,17 +1,12 @@
 # main function --------------
 
 #' Draw a simplex heatmap from a matrix of color values
+#' @inheritParams ggplot2::layer
+#' @param na.rm If `FALSE`, the default, missing values are removed with
+#'   a warning. If `TRUE`, missing values are silently removed.
+#' @param ... Other arguments passed on to [layer()]. These are
+#'   often aesthetics, used to set an aesthetic to a fixed value.
 #'
-#' @param mapping 
-#' @param data 
-#' @param stat 
-#' @param position 
-#' @param na.rm 
-#' @param show.legend 
-#' @param inherit.aes 
-#' @param ... 
-#'
-#' @return
 #' @export
 geom_simplex_heatmap <- function(
   mapping = NULL, data = 0, stat = "identity",

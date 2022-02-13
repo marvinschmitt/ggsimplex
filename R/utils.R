@@ -16,9 +16,9 @@ dot <- function(u, v){
 
 #' Helper function to bind columns into a single list column
 #'
-#' @param ... 
+#' @param ... columns that shall be turned into the list column
 #'
-#' @return
+#' @return single list column which consits of the specified columns
 #' @export
 make_list_column <- function(...){
   return(mapply(list, ..., SIMPLIFY=FALSE))

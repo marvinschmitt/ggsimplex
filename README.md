@@ -6,6 +6,10 @@
 # ggsimplex
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/marvinschmitt/ggsimplex/workflows/R-CMD-check/badge.svg)](https://github.com/marvinschmitt/ggsimplex/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/marvinschmitt/ggsimplex/branch/main/graph/badge.svg)](https://app.codecov.io/gh/marvinschmitt/ggsimplex?branch=main)
 <!-- badges: end -->
 
 The goal of `ggsimplex` is to provide a set of visualization utilities

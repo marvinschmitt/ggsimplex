@@ -7,12 +7,12 @@
 construct_simplex_grid(n_x, n_y)
 }
 \arguments{
-\item{n_x}{}
+\item{n_x}{number of grid points along x-axis}
 
-\item{n_y}{}
+\item{n_y}{number of grid points along y-axis}
 }
 \value{
-
+Grid of points within the 2-simplex
 }
 \description{
 Construct a simplex grid of specified resolution

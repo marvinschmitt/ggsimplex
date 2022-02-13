@@ -7,10 +7,10 @@
 make_list_column(...)
 }
 \arguments{
-\item{...}{}
+\item{...}{columns that shall be turned into the list column}
 }
 \value{
-
+single list column which consits of the specified columns
 }
 \description{
 Helper function to bind columns into a single list column

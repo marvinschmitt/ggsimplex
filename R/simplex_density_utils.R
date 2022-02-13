@@ -1,7 +1,9 @@
 #' Construct and evaluate a simplex density as a grid-based color map
 #'
-#' @param density_function 
-#' @param args 
+#' @param density_function Density function that is evaluated at each grid point
+#' @param args arguments to the density function
+#' @param resolution number of grid points along axes
+#' @param col_scale scale mapping, e.g. "linear" or "sqrt"
 #'
 #' @return A matrix of color codes
 #' @export
