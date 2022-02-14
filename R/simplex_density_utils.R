@@ -16,11 +16,16 @@ construct_density_matrix <- function(density_function, args,
   color_palette = viridis::viridis(n=n_colors)
   
   # Nyquist Sampling Theorem -> sample at >2*freq_max
-  pi_grid = construct_simplex_grid(n_x = 2.01*resolution, n_y = 2.01*resolution)
+  if (resolution == 101){
+    pi_grid = sysdata.pi_grid
+  } else {
+    pi_grid = construct_simplex_grid(n_x = 2.01*resolution, n_y = 2.01*resolution)
+  }
+  
   args = append(args, list(x=pi_grid), after=0)
   pi_grid_density = do.call(density_function, args)
   if (is.null(col_scale) || col_scale=="linear"){
-    
+    pi_grid_density = pi_grid_density # do nothing
   }
   else if (col_scale == "log"){
     pi_grid_density = log(pi_grid_density)
