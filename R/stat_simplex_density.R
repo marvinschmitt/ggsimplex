@@ -25,6 +25,7 @@ stat_simplex_density <- function(mapping = NULL, data = NULL,
   ggplot2::layer(
     stat = StatSimplexDensity, data = data, mapping = mapping, geom = geom, 
     position = position, show.legend = show.legend, inherit.aes = inherit.aes,
+    check.aes=FALSE,
     params = list(fun = fun, args = args, col_scale = col_scale,
                   na.rm = na.rm,...)
   )
