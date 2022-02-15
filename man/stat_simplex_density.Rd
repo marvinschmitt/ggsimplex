@@ -7,7 +7,7 @@
 stat_simplex_density(
   mapping = NULL,
   data = NULL,
-  geom = "simplex_heatmap",
+  geom = "simplex_raster",
   position = "identity",
   na.rm = FALSE,
   show.legend = NA,

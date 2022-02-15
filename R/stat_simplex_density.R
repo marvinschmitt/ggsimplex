@@ -14,7 +14,7 @@
 #' NULL (defaults to linear)
 #' @export
 stat_simplex_density <- function(mapping = NULL, data = NULL, 
-                                 geom = "simplex_heatmap",
+                                 geom = "simplex_raster",
                                  position = "identity", na.rm = FALSE, show.legend = NA, 
                                  inherit.aes = FALSE, fun = NULL, 
                                  args = NULL, col_scale = "linear",

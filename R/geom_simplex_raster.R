@@ -1,6 +1,6 @@
 # main function --------------
 
-#' Draw a simplex heatmap from a matrix of color values
+#' Draw a simplex raster from a matrix of color values
 #' @inheritParams ggplot2::layer
 #' @param na.rm If `FALSE`, the default, missing values are removed with
 #'   a warning. If `TRUE`, missing values are silently removed.
@@ -8,12 +8,12 @@
 #'   often aesthetics, used to set an aesthetic to a fixed value.
 #'
 #' @export
-geom_simplex_heatmap <- function(
+geom_simplex_raster <- function(
   mapping = NULL, data = 0, stat = "identity",
   position = "identity", na.rm = FALSE, show.legend = NA, 
   inherit.aes = FALSE, ...){
   ggplot2::layer(
-    geom = GeomSimplexHeatmap, mapping = mapping,  data = data, stat = stat, 
+    geom = GeomSimplexRaster, mapping = mapping,  data = data, stat = stat, 
     position = position, show.legend = show.legend, inherit.aes = inherit.aes,
     params = list(na.rm = FALSE, ...)
   )
@@ -21,8 +21,8 @@ geom_simplex_heatmap <- function(
 
 
 # ggproto ----------------
-GeomSimplexHeatmap <- ggplot2::ggproto(
-  "GeomSimplexHeatmap", ggplot2::Geom,
+GeomSimplexRaster <- ggplot2::ggproto(
+  "GeomSimplexRaster", ggplot2::Geom,
   required_aes = c("M"),
   default_aes = ggplot2::aes(alpha = 1.0),
   draw_key = ggplot2::draw_key_blank,

@@ -8,12 +8,12 @@
 #' @param ... Other arguments passed on to [layer()]. These are
 #'   often aesthetics, used to set an aesthetic to a fixed value.
 #' @export
-geom_simplex <- function(mapping=NULL, data=NULL,
+geom_simplex_point <- function(mapping=NULL, data=NULL,
                          position = "identity", na.rm = FALSE, 
                          show.legend = NA, stat="identity",
                          inherit.aes = TRUE, ...){
   ggplot2::layer(
-    stat = "identity", geom = GeomSimplexScatter, data = data, mapping = mapping,
+    stat = "identity", geom = GeomSimplexPoint, data = data, mapping = mapping,
     position = position, show.legend = show.legend, inherit.aes = TRUE,
     params = list(na.rm = na.rm, ...)
   )
@@ -22,8 +22,8 @@ geom_simplex <- function(mapping=NULL, data=NULL,
 
 # ggproto -----------------
 
-GeomSimplexScatter = ggplot2::ggproto(
-  "GeomSimplexScatter", ggplot2::Geom, required_aes = c("pmp"),
+GeomSimplexPoint = ggplot2::ggproto(
+  "GeomSimplexPoint", ggplot2::Geom, required_aes = c("pmp"),
   
   default_aes = ggplot2::aes(colour = "#f6546a", alpha = 0.4, 
                              shape = 19, size=0.3),
