@@ -17,7 +17,9 @@ construct_density_matrix <- function(density_function, args,
   
   # Nyquist Sampling Theorem -> sample at >2*freq_max
   if (resolution == 101){
-    pi_grid = sysdata.pi_grid
+    pi_grid = sysdata.pi_grid_101
+  } else if (resolution == 201){
+    pi_grid = sysdata.pi_grid_201
   } else {
     pi_grid = construct_simplex_grid(n_x = 2.01*resolution, n_y = 2.01*resolution)
   }

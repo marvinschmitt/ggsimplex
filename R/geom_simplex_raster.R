@@ -40,7 +40,7 @@ GeomSimplexRaster <- ggplot2::ggproto(
     ggcoords = list(
       width = B_ggcoords[2, "x"] - B_ggcoords[1, "x"],
       height = B_ggcoords[3, "y"] - B_ggcoords[1, "y"],
-      origin_x = B_ggcoords[1, "x"],
+      origin_x = B_ggcoords[1, "x"] - 0.002,
       origin_y = B_ggcoords[1, "y"]
     )
     

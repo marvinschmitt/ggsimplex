@@ -18,7 +18,8 @@ Description: This 'ggplot2' extension provides visualization utilities for simpl
 Imports:
     ggplot2,
     viridis,
-    data.table
+    data.table,
+    gridSVG
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
