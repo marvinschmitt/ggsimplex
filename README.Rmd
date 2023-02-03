@@ -30,6 +30,13 @@ set.seed(127)
 [![Codecov test coverage](https://codecov.io/gh/marvinschmitt/ggsimplex/branch/main/graph/badge.svg)](https://app.codecov.io/gh/marvinschmitt/ggsimplex?branch=main)
 <!-- badges: end -->
 
+## Warning: Proceed with caution
+You are using an untested initial demo of `{ggsimplex}`. Beware of unexpected behavior and bugs.
+
+This [blog post](https://www.marvinschmitt.com/blog/ggsimplex-prerelease/) gives a brief rundown of the pre-release version of `{ggsimplex}` with some examples.
+
+Bug reports and feature requests are always welcome at the GitHub Issues Page. All issue reports are appreciated and will be considered for the actual package release. Please do not expect them to be fixed anytime soon, though.
+
 ## Overview
 
 The goal of `ggsimplex` is to provide a set of visualization utilities revolving around the simplex as its underlying canvas.

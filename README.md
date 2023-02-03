@@ -11,8 +11,19 @@ coverage](https://codecov.io/gh/marvinschmitt/ggsimplex/branch/main/graph/badge.
 <!-- badges: end -->
 
 ## Warning: Proceed with caution
-You are using an untested initial demo of {ggsimplex} beware of unexpected behavior and bugs.
 
+You are using an untested initial demo of `{ggsimplex}`. Beware of
+unexpected behavior and bugs.
+
+This [blog
+post](https://www.marvinschmitt.com/blog/ggsimplex-prerelease/) gives a
+brief rundown of the pre-release version of `{ggsimplex}` with some
+examples.
+
+Bug reports and feature requests are always welcome at the GitHub Issues
+Page. All issue reports are appreciated and will be considered for the
+actual package release. Please do not expect them to be fixed anytime
+soon, though.
 
 ## Overview
 
