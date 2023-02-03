@@ -25,7 +25,7 @@ geom_simplex_canvas <- function(
 
 GeomSimplexCanvas = ggplot2::ggproto(
   "GeomSimplexCanvas", ggplot2::GeomPolygon, required_aes = c(),
-  default_aes = ggplot2::aes(size=1, linetype=1, 
+  default_aes = ggplot2::aes(linewidth=1, linetype=1, 
                              colour="black", alpha = 1,
                              fontsize = 12),
   draw_key = ggplot2::draw_key_polygon,
@@ -46,7 +46,7 @@ GeomSimplexCanvas = ggplot2::ggproto(
       gp = grid::gpar(
         col = scales::alpha(style_params$colour, style_params$alpha),
         fill = scales::alpha("black", 0.0), # fully transparent fill
-        lwd = style_params$size * .pt,
+        lwd = style_params$linewidth * .pt,
         lty = style_params$linetype
       )
     )
@@ -56,20 +56,20 @@ GeomSimplexCanvas = ggplot2::ggproto(
       fontsize=style_params$fontsize
       )
     text_grob_1 = grid::textGrob(expression(M[1]),
-                    x = coords$x[1] - 0.05,
+                    x = coords$x[1] - 0.021,
                     y = coords$y[1],
                     #just = c("left", "center"),
                     gp = text_style
                     )
     text_grob_2 =grid::textGrob(expression(M[2]),
-                    x = coords$x[2] + 0.05,
+                    x = coords$x[2] + 0.021,
                     y = coords$y[2],
                     #just = c("right", "center"),
                     gp = text_style
                     )
     text_grob_3 = grid::textGrob(expression(M[3]),
                     x = coords$x[3],
-                    y = coords$y[3] + 0.05,
+                    y = coords$y[3] + 0.021,
                     #just = c("center", "top"),
                     gp = text_style
                     )
