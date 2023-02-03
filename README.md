@@ -10,6 +10,10 @@
 coverage](https://codecov.io/gh/marvinschmitt/ggsimplex/branch/main/graph/badge.svg)](https://app.codecov.io/gh/marvinschmitt/ggsimplex?branch=main)
 <!-- badges: end -->
 
+## Warning: Proceed with caution
+You are using an untested initial demo of {ggsimplex} beware of unexpected behavior and bugs.
+
+
 ## Overview
 
 The goal of `ggsimplex` is to provide a set of visualization utilities
